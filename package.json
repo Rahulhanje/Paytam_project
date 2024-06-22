@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "paytm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^8.4.3",
-    "zod": "^3.22.4"
-  }
+  "license": "ISC"
 }
