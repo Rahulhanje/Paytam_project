@@ -1,9 +1,10 @@
 const express=require("express");
-const {user}=require("../db");
+const {user,Account}=require("../db");
 const jwt=require("jsonwebtoken");
 const { ParseStatus } = require("zod");
 const zod=require("zod");
 const JWT_screet = require("./config");
+
 const { authMiddleware } = require("./middleware");
 
 const router=express.Router();
@@ -36,8 +37,15 @@ router.post("/singup",async(req,res)=>{
         firstName: req.body.firstName,
         lastName: req.body.lastName
     });
-
+     
     const userId=user._id;
+   ///creating new account
+    await Account.create({
+        userId,
+        balance:1+Math.random()*10000
+
+    });
+    
     const token=jwt.sign({
         userId
     },JWT_screet);
