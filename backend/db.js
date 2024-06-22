@@ -8,6 +8,7 @@ const databaseSChema=mongoose.Schema({
     firstName:String,
     lastName:String
 });
+
 const accountSchema =mongoose.Schema({
     userId:{
         type:mongoose.Schema.Types.ObjectId,
@@ -16,7 +17,7 @@ const accountSchema =mongoose.Schema({
     },
     balance:Number
 })
-const Account=mongoose.model('Account',databaseBankSChema);
+const Account=mongoose.model('Account',accountSchema);
 const user=mongoose.model('Userdata',databaseSChema);
 module.exports={
     user,
