@@ -18,8 +18,8 @@ const accountSchema =mongoose.Schema({
     balance:Number
 })
 const Account=mongoose.model('Account',accountSchema);
-const user=mongoose.model('Userdata',databaseSChema);
+const User=mongoose.model('Userdata',databaseSChema);
 module.exports={
-    user,
+    User,
     Account,
 };

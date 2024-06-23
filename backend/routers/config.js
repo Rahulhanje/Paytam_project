@@ -1,3 +1,3 @@
-const JWT_screet="Hanuman";
+const JWT_SECRET ='Hanuman@123';
 
-module.exports=JWT_screet;
+module.exports={JWT_SECRET} ;
