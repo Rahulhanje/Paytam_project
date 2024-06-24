@@ -5,13 +5,13 @@ import {Signin} from './pages/signin';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
