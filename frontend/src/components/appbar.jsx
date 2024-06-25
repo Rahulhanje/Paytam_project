@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 export function Appbar() {
+    
     return (
         <div className="flex justify-between h-14 shadow-md ">
             <div className="flex flex-col justify-center h-full ml-5 font-bold text-3xl text-blue-500">PayTm App</div>

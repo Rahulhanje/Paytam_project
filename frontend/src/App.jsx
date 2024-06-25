@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import {Signup} from './pages/singup';
 import {Signin} from './pages/signin';
 import { Dashboard } from './pages/dashboard';
-import { SendMoney } from './pages/sendMony';
+import { SendMoney } from './pages/sendMoney';
 
 function App() {
   return (<>
