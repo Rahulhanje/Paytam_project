@@ -7,11 +7,10 @@ import { Button } from "../components/button";
 import { BottomWarning } from "../components/bottomWarning";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-const [username1,set1username]=useState("");
+
 export const Username = () => (
     username
 )
-console.log("usename is ="+username1);
 export function Signin(){
   const navigate=useNavigate();
   const [username, setusername] = useState("");
@@ -56,4 +55,3 @@ export function Signin(){
   </div>
   )
 }
-export default username
