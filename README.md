@@ -56,4 +56,4 @@ This project is a clone of the Paytm application, providing a platform for users
 
 ## Contact Information
 
-- **Email:** [rahulhanje0.7@gmail.com]
+- **Email:** rahulhanje0.7@gmail.com
